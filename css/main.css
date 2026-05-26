@@ -1,28 +1,34 @@
 body {
-  background-color: #f0eae1; 
   color: hsl(240, 85%, 15%); 
   font-family: Arial, Helvetica, sans-serif; 
   display: flex;             /* FIXED: Enables flexbox layout */
   flex-direction: column; 
   min-height: 100vh; 
-  margin: 0;                 
+  margin: 0;           
+  text-align: center;      
 }
 
 #header {
   width: 100%; 
-  height: 5vh;              
+  height: 7.5vh;              
   background-color: hsl(200, 100%, 60%);
 }
 
 #footer {
   width: 100%; 
-  height: 20vh;              
+  height: 17.5vh;              
   background-color: hsl(80, 95%, 55%);
   margin-top: auto;          /* FIXED: Pushes footer to the bottom */
 }
 
+#main {
+    width: 100%;
+    height: 75vh;
+    background-color: #f0eae1; 
+}
+
 /* Combined selector fixed to target body and header children */
-body, header { 
+body, #header, #main { 
   display: flex; 
   align-items: center; 
   padding: 0px; 
