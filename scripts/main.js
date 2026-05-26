@@ -33,10 +33,10 @@ const fillerText = [
     "Don't waste all your money!",
     "Always keep an eye on your spending!",
     "Cancel useless subscriptions, please.",
-    `There is a ${Math.round(100 / fillerText.length).toString()}% chance that you will see this rare message!`,
     `My my, ${localStorage.getItem("name") || "Person"} is a wonderful name!`,
     "How's your side hustle going?"
 ];
+fillerText.push([`There is a ${Math.round(100 / (fillerText.length+1)).toString()}% chance that you will see this rare message!`]);
 typeEffect(welcomeText, `Welcome back, ${localStorage.getItem("name") || "Person"}.`, 100, () => {
     setTimeout(() => {
         typeEffect(welcomeText, fillerText[Math.floor(Math.random() * fillerText.length)], 75);
