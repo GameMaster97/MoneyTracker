@@ -64,14 +64,14 @@ body, #header, #main, #footer {
 
 .edit-button:hover {
     transform: scale(1.1);
-    background-color: hsl(50, 80%, 70%);
+    background-color: hsl(45, 80%, 70%);
     transition: background-color 0.07s ease-out;
     transition: transform 0.07s ease-out;
 }
 
 .edit-button:active {
     transform: scale(1.05);
-    background-color: hsl(55, 85%, 70%);
+    background-color: hsl(40, 85%, 70%);
     transition: background-color 0.04s linear;
     transition: transform 0.04s linear;
 }
