@@ -51,8 +51,9 @@ const fillerText = [
 ];
 fillerText.push([`There is a ${Math.round(100 / (fillerText.length+1)).toString()}% chance that you will see this rare message!`])
 
-typeEffect(welcomeText, `Welcome back, ${localStorage.getItem("name") || "Person"}. `, 100, () => {
+typeEffect(welcomeText, `Welcome back, ${localStorage.getItem("name") || "Person"}.`, 100, () => {
     setTimeout(() => {
+        welcomeText.innerHTML += " ";
         typeEffect(welcomeText, fillerText[Math.floor(Math.random() * fillerText.length)], 75);
     }, 400);
 });
