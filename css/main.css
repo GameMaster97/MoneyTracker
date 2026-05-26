@@ -1,30 +1,33 @@
 body {
-    background-color: #f0eae1;
-    color: hsl(240, 85%, 15%);
-    font-family: Arial, Helvetica, sans-serif;
-    flex-direction: column;
-    min-height: 100vh; /* Takes up full height of the viewport */
+  background-color: #f0eae1; 
+  color: hsl(240, 85%, 15%); 
+  font-family: Arial, Helvetica, sans-serif; 
+  display: flex;             /* FIXED: Enables flexbox layout */
+  flex-direction: column; 
+  min-height: 100vh; 
+  margin: 0;                 
 }
 
 #header {
-    width: 100%;
-    height: 5%;
-    background-color: hsl(200, 100%, 60%);
+  width: 100%; 
+  height: 5vh;              
+  background-color: hsl(200, 100%, 60%);
 }
 
 #footer {
-    width: 100%;
-    height: 20%;
-    background-color: hsl(80, 95%, 55%);
+  width: 100%; 
+  height: 20vh;              
+  background-color: hsl(80, 95%, 55%);
+  margin-top: auto;          /* FIXED: Pushes footer to the bottom */
 }
 
-body, #header, #flex {
-    display: flex;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
+/* Combined selector fixed to target body and header children */
+body, header { 
+  display: flex; 
+  align-items: center; 
+  padding: 0px; 
 }
 
-h1 {
-    font-size: 32px;
+h1 { 
+  font-size: 32px; 
 }
