@@ -1,7 +1,6 @@
 body {
   color: hsl(240, 85%, 15%); 
-  font-family: Arial, Helvetica, sans-serif; 
-  display: flex;             /* FIXED: Enables flexbox layout */
+  font-family: Arial, Helvetica, sans-serif;
   flex-direction: column; 
   min-height: 100vh; 
   margin: 0;           
@@ -10,7 +9,8 @@ body {
 
 #header {
   width: 100%; 
-  height: 7.5vh;              
+  height: 7.5vh;     
+  flex-direction: row;         
   background-color: hsl(200, 100%, 60%);
 }
 
@@ -18,22 +18,26 @@ body {
   width: 100%; 
   height: 17.5vh;              
   background-color: hsl(80, 95%, 55%);
-  margin-top: auto;          /* FIXED: Pushes footer to the bottom */
+  margin-top: auto;    
+  flex-direction: row;      /* FIXED: Pushes footer to the bottom */
 }
 
 #main {
     width: 100%;
     height: 75vh;
     background-color: #f0eae1; 
+    flex-direction: column;
 }
 
 /* Combined selector fixed to target body and header children */
-body, #header, #main { 
+body, #header, #main, #footer { 
   display: flex; 
   align-items: center; 
+  justify-content: center;
   padding: 0px; 
 }
 
 h1 { 
   font-size: 32px; 
+  background-color: red;
 }
