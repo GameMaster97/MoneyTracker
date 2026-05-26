@@ -42,26 +42,35 @@ body, #header, #main, #footer {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
+    margin: 8px;
     border: 4px solid red;
 }
 
 .edit-button {
     border-radius: 10px;
     border: 5px solid black;
-    padding: 8px 16px;
+    padding: 12px 24px;
     margin: 6px;
     background-color: hsl(50, 75%, 75%);
-    transition: background-color 0.1s ease-in;
-    transition: transform 0.1s ease-in;
-}
-.edit-button:hover {
-    transform: scale(1.2);
-    background-color: hsl(50, 80%, 70%);
     transition: background-color 0.3s ease-out;
     transition: transform 0.3s ease-out;
 }
 
+.edit-button:hover {
+    transform: scale(1.2);
+    background-color: hsl(50, 80%, 70%);
+    transition: background-color 0.1s ease-in;
+    transition: transform 0.1s ease-in;
+}
+
+.edit-button:active {
+    transform: scale(1.15);
+    background-color: hsl(55, 85%, 70%);
+    transition: background-color 0.04s linear;
+    transition: transform 0.04s linear;
+}
+
 h1 { font-size: 32px; }
 h2 { font-size: 26px; }
-h3 { font-size: 22px; }
+h3 { font-size: 22px; margin: 8px; }
