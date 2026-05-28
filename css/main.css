@@ -31,7 +31,7 @@ body {
 }
 
 /* Combined selector fixed to target body and header children */
-body, #header, #main, #footer { 
+body, header, main, footer { 
   display: flex; 
   align-items: center; 
   justify-content: center;
